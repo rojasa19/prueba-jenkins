@@ -17,5 +17,10 @@ pipeline {
                 sh 'npm test'
             }
         }
+        stage('Finish') {
+            steps {
+                sh 'echo terminamos'
+            }
+        }
     }
 }
